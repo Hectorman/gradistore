@@ -499,7 +499,7 @@ img {
     transform: translateX(0);
   }
   .popup > .content > .row {
-    display: block;
+    flex-direction: column-reverse;
   }
   .popup > .content > .row > div {
     width: 100%;
@@ -554,7 +554,7 @@ img {
     display: block;
   }
   .popup > .content > .row > div.carrito {
-    padding-top: 0;
+    padding-bottom: 0;
   }
   .popup {
     display: block;
@@ -566,7 +566,7 @@ img {
     display: none;
   }
   .cart-only .popup > .content > .row > div.carrito {
-    padding-top: 30px;
+    padding-bottom: 30px;
   }
   footer .pastillas-flotantes {
     width: 100px;
