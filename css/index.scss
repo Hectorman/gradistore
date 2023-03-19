@@ -1,0 +1,626 @@
+// Paleta de colores 
+$base-color: #FFDCD3;
+$base-dark: #EFA693;
+$text-color: #444950;
+$parrafos: #939393;
+$celeste: #CAF0FF;
+$oferta: #FFC658;
+
+// Fuentes
+$cursiva: 'Abhaya Libre', serif;
+$montserrat: 'Montserrat', sans-serif;
+$openSans: 'Open Sans', sans-serif;
+
+/* Utilities */
+.btn {
+    display: inline-block;
+    color: #fff;
+    font-family: $montserrat;
+    text-transform: uppercase;
+    background-color: $base-dark;
+    font-weight: 700;
+    font-size: 0.9em;
+    width: auto;
+    padding: 12px 25px;
+    border-radius: 100px;
+    transition: all .3s;
+    text-align: center;
+    border: 2px solid transparent;
+
+    &:hover {
+        box-shadow: 0 0 20px rgba(0,0,0,.1);
+        border-color: $base-dark;
+        color: $base-dark;
+        background-color: #fff;
+    }
+}
+
+.btn-secondary {
+    color: $base-dark;
+    background-color: #fff;
+
+    &:hover {
+        border-color: $base-dark;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+/* Main Styles */
+body {
+    color: $text-color;
+    font-family: $montserrat;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: $base-color;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+header h4 {
+    margin: 0;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $cursiva;
+    color: $text-color;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.page-title .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.page-title h1 {
+    margin-bottom: 0;
+    position: relative;
+
+    &:before {
+        background-color: $celeste;
+        width: 70px;
+        height: 24px;
+        position: absolute;
+        left: -20px;
+        top: 30px;
+        border-radius: 100px;
+        content: "";
+        z-index: -1;
+    }
+}
+
+.slider-nav {
+    display: flex;
+}
+
+.slider-nav .arrow {
+    position: relative;
+
+    &:before {
+        background-color: $base-color;
+        width: 70px;
+        height: 24px;
+        position: absolute;
+        left: 50%;
+        margin-left: -35px;
+        margin-top: -12px;
+        top: 50%;
+        border-radius: 100px;
+        content: "";
+        z-index: -1;
+    }
+}
+
+.slider-nav .arrow div {
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: $text-color;
+    font-size: 1.6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgba(0,0,0,.25);
+    cursor: pointer;
+    transition: all .3s;
+
+    &:hover { 
+        transform: scale(1.2);
+    }
+}
+
+.toolbox {
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+.toolbox > div {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+.toolbox > div i {
+    font-size: 1.4em;
+}
+
+.row {
+    display: flex;
+}
+
+.col-40 {
+    width: 40%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-60 {
+    width: 60%;
+}
+
+.precio {
+    margin-bottom: 50px;
+}
+
+.products-wrapper {
+    margin-top: 30px;
+    visibility: hidden;
+}
+
+.page-loaded .products-wrapper {
+    visibility: visible;
+}
+
+.product .thumb {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.product .thumb img {
+    display: block;
+    transition: all .3s;
+}
+
+.product .thumb > div {
+    position: absolute;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+.product h2 {
+    font-family: $montserrat;
+    color: $text-color;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stars {
+    color: $oferta;
+}
+
+.stars span {
+    color: $parrafos;
+    font-weight: 400;
+}
+
+.product-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: $montserrat;
+}
+
+.price {
+    font-weight: 400;
+}
+
+.price .regular-price {
+    color: $parrafos;
+    margin-right: 10px;
+}
+
+.all-products {
+    margin: 80px 0;
+}
+
+footer {
+    padding: 0 20px 80px 20px;
+    margin-top: 300px;
+    background: $celeste;
+    position: relative;
+    &::before {
+        content: "";
+        background-image: url(../img/wave-bg.svg);
+        background-repeat: repeat-x;
+        background-position: center top;
+        background-size: 1440px auto;
+        position: absolute;
+        top: -200px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: 20px;
+        width: 314px;
+        height: 294px;
+        background-image: url(../img/pastillas-1.png); 
+        z-index: 2;  
+    }
+}
+
+footer .pastillas-flotantes {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    z-index: 2;
+}
+
+footer > * {
+    position: relative;
+    z-index: 3;
+}
+
+footer h2 {
+    font-size: 2.6em;
+    max-width: 757px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer p {
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    color: $parrafos;
+    font-size: .9em;
+}
+
+.newsletter-form {
+    margin-top: 30px;
+}
+
+form input {
+    background-color: #fff;
+    padding: 15px 25px;
+    border: 1px solid $base-dark;
+    border-radius: 100px;
+}
+
+.product-template {
+    opacity: 0;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    overflow-y: auto;
+}
+
+.popup .content {
+    width: 800px;
+    position: relative;
+    transform: scale(.7);
+    transition: all .3s;
+    pointer-events: none;
+}
+
+.showPopup .popup {
+    opacity: 1;
+    visibility: visible;
+}
+
+.showPopup .content {
+    transform: scale(1);
+}
+
+.popup .content .row > div {
+    background: #fff;
+}
+
+.popup .content > .row > div > h3,
+.popup .content > .row > div > h4 
+{
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.active-orden {
+    padding: 30px;
+    border-right: 1px solid rgba(0,0,0,.2);
+    transition: all .3s;
+    transition-delay: .06s;
+    pointer-events: auto;
+}
+
+.no-trans .active-orden,
+.no-trans .carrito
+{
+    transition: none;
+}
+
+.carrito {
+    padding: 30px;
+    text-align: center;
+    transition: all .3s;
+    transition-delay: .06s;
+    pointer-events: auto;
+}
+
+.active-orden .thumb {
+    margin-right: 25px;
+}
+
+.active-orden h4 {
+    margin-bottom: 10px;
+}
+
+.active-orden h3 {
+    font-size: 1.6em;
+}
+
+.close-popup {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.details {
+    padding-top: 10px;
+}
+
+.carlist > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 15px;
+    transition: all .3s;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+.carlist > div:hover {
+    background-color: #f9f9f9;
+}
+
+.carlist > div.active {
+    outline: 1px solid rgba(0,0,0,.6);
+    border-color: transparent;
+}
+
+.carlist > div h5 {
+    font-size: 1em;
+    cursor: pointer;
+    margin: 0;
+}
+
+.carlist > div p {
+    margin: 0;
+}
+
+.subtitle {
+    display: flex;
+    font-size: .9em;
+    color: #555;
+}
+
+.carlist > div .subtitle p {
+    margin-right: 10px;
+}
+
+.carlist > div i {
+    cursor: pointer;
+}
+
+.cart-total {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.contador {
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    background-color: #F44846;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: .8em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.carrito-icon {
+    cursor: pointer;
+}
+
+.cart-only .active-orden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(30%);
+}
+
+.cart-only .carrito {
+    transform: translateX(-70%);
+}
+
+@media screen and (max-width: 600px) {
+
+    .cart-only .carrito {
+        transform: translateX(0);
+    }
+
+    .popup > .content > .row {
+        display: block;
+    }
+
+    .popup > .content > .row > div {
+        width: 100%;
+    }
+
+    .page-title .container {
+        display: block;
+    }
+
+    .page-title .container > div {
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .toolbox {
+        margin-bottom: 0;
+    }
+
+    .page-title h1 {
+        font-size: 2em;
+    }
+
+    footer h2 {
+        font-size: 1.8em;
+    }
+
+    .products-wrapper {
+        padding-left: 15px;
+    }
+    
+    footer {
+        margin-top: 270px;
+    }
+
+    footer::before {
+        top: -150px;
+    }
+
+    .all-products {
+        margin: 50px 0;
+    }
+
+    form input {
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .newsletter-form button {
+        width: 200px;
+    }
+
+    .active-orden .thumb {
+        width: 100%;
+        margin: 0;
+    }
+
+    .popup .content .row > div.details {
+        width: 100%;
+    }
+
+    .active-orden .row {
+        display: block;
+    }
+
+    .popup > .content > .row > div.carrito {
+        padding-top: 0;
+    }
+
+    .popup {
+        display: block;
+    }
+
+    .popup .content {
+        width: 100%;
+    }
+
+    .cart-only .active-orden {
+        display: none;
+    }
+
+    .cart-only .popup > .content > .row > div.carrito {
+        padding-top: 30px;
+    }
+
+    footer .pastillas-flotantes {
+        width: 100px;
+        top: 30px;
+    }
+
+    footer:after {
+        width: 200px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+}
+

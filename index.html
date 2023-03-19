@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>GradiStore</title>
+    <meta name="description" content="">
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="iconfont/style.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@700&family=Montserrat:wght@400;700&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <div id="app">
+
+        <header>
+
+            <h4>Gratis verzending vanaf €30</h4>
+
+        </header>
+
+        <main>
+
+            <div class="page-title">
+
+                <div class="container">
+
+                    <h1>Discover our <br /> planet-friendly offer</h1>
+
+                    <div>
+
+                        <div class="toolbox">
+
+                            <div class="favoritos">
+
+                                <i class="icon-heart"></i>
+        
+                            </div>
+        
+                            <div class="carrito-icon">
+        
+                                <i class="icon-shopping-cart"></i>
+        
+                                <div class="contador"> 0 </div>
+        
+                            </div>
+
+                        </div>
+
+                        <div class="slider-nav">
+
+                            <div class="arrow arrow-left">
+                                <div><i class="icon-keyboard_arrow_left"></i></div>
+                            </div>
+
+                            <div class="arrow arrow-right">
+                                <div><i class="icon-keyboard_arrow_right"></i></div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="products-wrapper">
+
+                <section class="splide" aria-label="Product Gallery">
+                    <div class="splide__track">
+                      <ul class="splide__list">
+                        <li class="splide__slide product-template">
+                            <div class="product">
+                                <div class="thumb">
+                                    <img src="img/loader.gif" />
+            
+                                    <div><a class="add-to-cart btn btn-secondary" href="#">Add to cart</a></div>
+                                </div>
+            
+                                <h2>Dishwasher tablets x52</h2>
+            
+                                <div class="product-data">
+                                    <div class="stars">
+                                        <i class="icon-star"></i>
+                                        <i class="icon-star"></i>
+                                        <i class="icon-star"></i>
+                                        <i class="icon-star"></i>
+                                        <i class="icon-star"></i>
+                                        <span>(390)</span>
+                                    </div>
+            
+                                    <div class="price">
+                                        <span class="regular-price">€19,00</span>
+                                        <span class="sale-price">€15,00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                      </ul>
+                    </div>
+                </section>
+
+            </div><!-- /products-wrapper-->
+
+            <div class="center all-products">
+
+                <a href="#" class="btn">Browse all products</a>
+
+            </div>  
+
+        </main>
+
+        <footer class="center">
+
+            <h2>Join the green revolution without commitment</h2>
+
+            <p>If you are missing something and don't want to miss future promotions or our future products</p>
+
+            <form class="newsletter-form">
+
+                <input placeholder="Your email" required type="email" name="email" />
+
+                <button class="btn">Send</button>
+
+            </form>
+
+            <img src="img/pastillas-2.png" class="pastillas-flotantes" />
+
+        </footer>
+
+        <div class="popup">
+
+            <div class="content">
+
+                <div class="row">
+
+                    <div class="col-60 active-orden">
+
+                        <h4 class="agregado">Product added to the cart</h4>
+
+                        <h3></h3>
+                        
+                        <div class="row">
+
+                            <div class="col-50 thumb">
+
+                                <img src="img/product-1.jpg" />
+
+                            </div>
+
+                            <div class="col-50 details">
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                                <p><strong>Cantidad:</strong> <span class="cantidad"></span></p>
+
+                                <p><strong>Total:</strong> € <span class="total-orden"></span></p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-40 carrito">
+
+                        <h3>Cart</h3>
+
+                        <div class="carlist">
+
+                            <div class="cart-item">
+
+                                <div>
+
+                                    <h5></h5>
+
+                                    <div class="subtitle">
+
+                                        <p></p>
+
+                                        <p></p>
+
+                                    </div>
+
+                                </div>
+
+                                <i title="borrar" class="icon-trash-2"></i>
+
+                            </div>
+
+                        </div><!-- /cartlist -->
+
+                        <div class="cart-total">
+
+                            <strong>Cart total:</strong> € <span></span>
+
+                        </div>
+
+                        <i class="icon-clear close-popup"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div><!-- /app -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script defer src="js/index.js"></script>
+
+</body>
