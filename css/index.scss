@@ -521,7 +521,7 @@ img {
     }
 
     .popup > .content > .row {
-        display: block;
+        flex-direction: column-reverse;
     }
 
     .popup > .content > .row > div {
@@ -592,7 +592,7 @@ img {
     }
 
     .popup > .content > .row > div.carrito {
-        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .popup {
@@ -608,7 +608,7 @@ img {
     }
 
     .cart-only .popup > .content > .row > div.carrito {
-        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     footer .pastillas-flotantes {
